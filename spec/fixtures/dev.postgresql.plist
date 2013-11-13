@@ -11,14 +11,14 @@
       <string>A tolerably okay relational database.</string>
 
       <key>Port</key>
-      <integer>15432</integer>
+      <integer>5432</integer>
     </dict>
 
     <key>ProgramArguments</key>
     <array>
       <string>/test/boxen/homebrew/bin/postgres</string>
       <string>-p</string>
-      <string>15432</string>
+      <string>5432</string>
       <string>-D</string>
       <string>/test/boxen/data/postgresql</string>
       <string>-r</string>

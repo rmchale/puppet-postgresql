@@ -58,10 +58,10 @@ describe 'postgresql' do
     })
 
     should contain_exec('wait-for-postgresql').with({
-      :command  => 'while ! nc -z localhost 15432; do sleep 1; done',
+      :command  => 'while ! nc -z localhost 5432; do sleep 1; done',
       :provider => 'shell',
       :timeout  => 30,
-      :unless   => 'nc -z localhost 15432',
+      :unless   => 'nc -z localhost 5432',
       :require  => 'Service[dev.postgresql]'
     })
   end

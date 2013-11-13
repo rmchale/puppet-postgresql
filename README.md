@@ -19,7 +19,7 @@ postgresql::db { 'mydb': }
 * `stdlib`
 * `sysctl`
 
-*Note: Boxen runs most services on non-standard ports as to not collide with existing local installs. Boxen Postgresql runs on 15432 as opposed to the standard 5432.*
+*Note: Overide typical boxen install on port 15432 to run on standard 5432.*
 
 Then write some code. Run `script/cibuild` to test it. Check the `script`
 directory for other useful tools.
